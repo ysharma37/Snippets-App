@@ -1,0 +1,6 @@
+{
+    "username": "admin",
+    "password": "12345",
+    "projectname": "CS5220-Snippets-Application",
+    "jwtsecret": "whiskey"
+}

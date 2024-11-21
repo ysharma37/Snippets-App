@@ -1,0 +1,214 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Snippets Application",
+    "dateExported": "2023-11-13T06:26:52.336Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "fa1b4fac-c3d5-4de7-88e2-ee13836e7f15",
+            "name": "Users",
+            "containerId": "",
+            "created": "2023-10-08T07:15:33.974Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "72a7f0cd-7473-49c4-b7bc-bcfaae87871c",
+            "name": "Snippets",
+            "containerId": "",
+            "created": "2023-10-08T08:39:40.611Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "ab786f44-2cb0-4243-b23e-5a6df5d20876",
+            "name": "Bookmarks",
+            "containerId": "",
+            "created": "2023-10-08T08:23:20.885Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "6cf0a73c-7fd2-4c08-9ecf-5b22b7107771",
+            "colId": "6aaa208d-f693-4c80-a705-8637c3bd0a3e",
+            "containerId": "fa1b4fac-c3d5-4de7-88e2-ee13836e7f15",
+            "name": "GET /user/id",
+            "url": "localhost:8080/users/6548957c4ee5d8384d614313?snippets=true&bookmarks=true",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2023-10-08T07:31:25.915Z",
+            "modified": "2023-11-13T06:13:36.715Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "snippets",
+                    "value": "true",
+                    "isPath": false
+                },
+                {
+                    "name": "bookmarks",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "bcb0e421-ba29-45e2-aefb-35b16ea2ed71",
+            "colId": "6aaa208d-f693-4c80-a705-8637c3bd0a3e",
+            "containerId": "fa1b4fac-c3d5-4de7-88e2-ee13836e7f15",
+            "name": "POST /users/:id",
+            "url": "localhost:8080/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-10-08T07:15:41.901Z",
+            "modified": "2023-11-13T04:31:51.461Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\t\"username\": \"user10\",\n\t\t\"years_experience\": 2,\n\t\t\"programming_languages\": [\"C++\"]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b0e045f1-7bc4-4b0c-a1ff-d28704238a79",
+            "colId": "6aaa208d-f693-4c80-a705-8637c3bd0a3e",
+            "containerId": "ab786f44-2cb0-4243-b23e-5a6df5d20876",
+            "name": "GET /bookmarks",
+            "url": "localhost:8080/bookmarks",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2023-10-08T08:31:31.498Z",
+            "modified": "2023-10-08T08:31:39.824Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "afb1ab0d-40a8-47b4-b661-99253777f6eb",
+            "colId": "6aaa208d-f693-4c80-a705-8637c3bd0a3e",
+            "containerId": "fa1b4fac-c3d5-4de7-88e2-ee13836e7f15",
+            "name": "PUT /users/:id",
+            "url": "localhost:8080/users/6551a6b713ccf60e524e4b5f",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-10-08T07:40:40.618Z",
+            "modified": "2023-11-13T04:32:15.572Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"user12\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aeeaaa4e-b2fc-47b6-b3ca-815cfa86d725",
+            "colId": "6aaa208d-f693-4c80-a705-8637c3bd0a3e",
+            "containerId": "ab786f44-2cb0-4243-b23e-5a6df5d20876",
+            "name": "POST /bookmarks",
+            "url": "localhost:8080/bookmarks",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-10-08T08:23:37.870Z",
+            "modified": "2023-11-13T06:25:23.121Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\t\"snippet_id\": \"6548957c4ee5d8384d614315\",\n    \"user_id\": \"6548957c4ee5d8384d61430f\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "39ea172d-f1d5-413c-85cb-9aa11240d680",
+            "colId": "6aaa208d-f693-4c80-a705-8637c3bd0a3e",
+            "containerId": "ab786f44-2cb0-4243-b23e-5a6df5d20876",
+            "name": "DELETE /bookmarks/:id",
+            "url": "localhost:8080/bookmarks/6551a71e13ccf60e524e4b6d",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-10-08T08:32:24.498Z",
+            "modified": "2023-11-13T04:33:53.595Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cf895080-dc53-45b5-bfd5-e85ba1667b3a",
+            "colId": "6aaa208d-f693-4c80-a705-8637c3bd0a3e",
+            "containerId": "72a7f0cd-7473-49c4-b7bc-bcfaae87871c",
+            "name": "GET /snippets",
+            "url": "localhost:8080/snippets?language=pYTHon",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-10-08T08:40:05.681Z",
+            "modified": "2023-11-13T04:32:33.315Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "language",
+                    "value": "pYTHon",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "bff6d11b-790c-4996-b233-51a545faf56f",
+            "colId": "6aaa208d-f693-4c80-a705-8637c3bd0a3e",
+            "containerId": "72a7f0cd-7473-49c4-b7bc-bcfaae87871c",
+            "name": "GET /snippets/:id",
+            "url": "localhost:8080/snippets/6548957c4ee5d8384d61431d?bookmark=true",
+            "method": "GET",
+            "sortNum": 95000,
+            "created": "2023-10-08T09:32:33.096Z",
+            "modified": "2023-11-13T04:32:58.511Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "bookmark",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "502a75fe-d5ed-4ffc-ab70-059ea2a5471b",
+            "colId": "6aaa208d-f693-4c80-a705-8637c3bd0a3e",
+            "containerId": "72a7f0cd-7473-49c4-b7bc-bcfaae87871c",
+            "name": "POST /snippets",
+            "url": "localhost:8080/snippets",
+            "method": "POST",
+            "sortNum": 97500,
+            "created": "2023-10-08T09:39:12.103Z",
+            "modified": "2023-11-13T04:33:09.793Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Snippet10\",\n  \"code_snippet\": \"console.log(`I am Snippet 1`);\",\n  \"programming_languge\": \"JavaScript\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "91cd3cde-dd6e-49ca-9996-bda88facca3b",
+            "colId": "6aaa208d-f693-4c80-a705-8637c3bd0a3e",
+            "containerId": "72a7f0cd-7473-49c4-b7bc-bcfaae87871c",
+            "name": "DELETE /snippets/:id",
+            "url": "localhost:8080/snippets/6551a70513ccf60e524e4b68",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-10-08T08:48:50.789Z",
+            "modified": "2023-11-13T04:33:25.160Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
